@@ -1,0 +1,46 @@
+
+*** Running vivado
+    with args -log Mat_mul_TB.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mat_mul_TB.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Mat_mul_TB.tcl -notrace
+Command: synth_design -top Mat_mul_TB -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28668 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1084.555 ; gain = 158.082 ; free physical = 3151 ; free virtual = 5658
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Mat_mul_TB' [/auto/homes/hc475/P35/rtl/src/src/TB.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multple_mat' [/auto/homes/hc475/P35/rtl/src/src/multiple_mat.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'p_multiplier' [/auto/homes/hc475/P35/rtl/src/src/p_multiplier.v:4]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter MULT_LATENCY bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'p_multiplier' (1#1) [/auto/homes/hc475/P35/rtl/src/src/p_multiplier.v:4]
+WARNING: [Synth 8-5856] 3D RAM A1_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM B1_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM C_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM D_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM E_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-3848] Net Res in module/entity multple_mat does not have driver. [/auto/homes/hc475/P35/rtl/src/src/multiple_mat.v:9]
+INFO: [Synth 8-256] done synthesizing module 'multple_mat' (2#1) [/auto/homes/hc475/P35/rtl/src/src/multiple_mat.v:1]
+ERROR: [Synth 8-462] no clock signal specified in event control [/auto/homes/hc475/P35/rtl/src/src/TB.v:25]
+ERROR: [Synth 8-285] failed synthesizing module 'Mat_mul_TB' [/auto/homes/hc475/P35/rtl/src/src/TB.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1163.023 ; gain = 236.551 ; free physical = 3070 ; free virtual = 5579
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 6 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 12:26:25 2017...

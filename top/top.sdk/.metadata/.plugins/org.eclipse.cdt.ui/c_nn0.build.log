@@ -1,0 +1,6 @@
+17:53:42 **** Incremental Build of configuration Release for project c_nn0 ****
+make all 
+make: Nothing to be done for `all'.
+
+17:53:42 Build Finished (took 73ms)
+

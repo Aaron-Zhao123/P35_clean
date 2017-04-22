@@ -1,0 +1,4 @@
+# Ensure Vivado files never come up again
+*.log
+*.jou
+*.str

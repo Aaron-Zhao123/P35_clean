@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Thu Apr 20 19:36:17 2017
+-- Date        : Sun Apr 23 19:38:59 2017
 -- Host        : acs-05.cl.cam.ac.uk running 64-bit Ubuntu 14.04.5 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/ip/top_nn0_0_0/top_nn0_0_0_stub.vhdl

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21357 
+INFO: Helper process launched with PID 3822 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1084.555 ; gain = 158.082 ; free physical = 22814 ; free virtual = 39320
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1085.555 ; gain = 159.082 ; free physical = 2573 ; free virtual = 4877
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'nn0_v1_0' [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/hdl/nn0_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -30,6 +30,7 @@ INFO: [Synth 8-226] default block is never used [/auto/homes/yaz21/P35_clean/v3/
 INFO: [Synth 8-226] default block is never used [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/hdl/nn0_v1_0_S00_AXI.v:366]
 INFO: [Synth 8-638] synthesizing module 'multple_mat' [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/multiple_mat.v:1]
 	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter Nlayers bound to: 10 - type: integer 
 	Parameter MULT_LATENCY bound to: 3 - type: integer 
 	Parameter NUM_MULT bound to: 4 - type: integer 
 	Parameter START bound to: 2'b00 
@@ -44,45 +45,9 @@ WARNING: [Synth 8-5856] 3D RAM B1_reg  for this pattern/configuration is not sup
 WARNING: [Synth 8-5856] 3D RAM C_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-5856] 3D RAM D_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-5856] 3D RAM E_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
-WARNING: [Synth 8-3848] Net sum_l10[1][1] in module/entity multple_mat does not have driver. [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/multiple_mat.v:276]
-WARNING: [Synth 8-3848] Net sum_l10[1][0] in module/entity multple_mat does not have driver. [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/multiple_mat.v:276]
-WARNING: [Synth 8-3848] Net sum_l10[0][1] in module/entity multple_mat does not have driver. [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/multiple_mat.v:276]
-WARNING: [Synth 8-3848] Net sum_l10[0][0] in module/entity multple_mat does not have driver. [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/multiple_mat.v:276]
 INFO: [Synth 8-256] done synthesizing module 'multple_mat' (2#1) [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/multiple_mat.v:1]
 INFO: [Synth 8-256] done synthesizing module 'nn0_v1_0_S00_AXI' (3#1) [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/hdl/nn0_v1_0_S00_AXI.v:4]
 INFO: [Synth 8-256] done synthesizing module 'nn0_v1_0' (4#1) [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/hdl/nn0_v1_0.v:4]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[31]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[30]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[29]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[28]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[27]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[26]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[25]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[24]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[23]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[22]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[21]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[20]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[19]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[18]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[17]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[16]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[15]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[14]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[13]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[12]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[11]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[10]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[9]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[8]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[7]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[6]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[5]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[4]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[3]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[2]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[1]
-WARNING: [Synth 8-3331] design multple_mat has unconnected port Res[0]
 WARNING: [Synth 8-3331] design nn0_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design nn0_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design nn0_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
@@ -90,21 +55,21 @@ WARNING: [Synth 8-3331] design nn0_v1_0_S00_AXI has unconnected port S_AXI_ARPRO
 WARNING: [Synth 8-3331] design nn0_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design nn0_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1125.148 ; gain = 198.676 ; free physical = 22764 ; free virtual = 39275
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1126.148 ; gain = 199.676 ; free physical = 2529 ; free virtual = 4834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1125.148 ; gain = 198.676 ; free physical = 22764 ; free virtual = 39276
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1126.148 ; gain = 199.676 ; free physical = 2529 ; free virtual = 4833
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1133.090 ; gain = 206.617 ; free physical = 22764 ; free virtual = 39277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1134.090 ; gain = 207.617 ; free physical = 2529 ; free virtual = 4833
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1141.098 ; gain = 214.625 ; free physical = 22754 ; free virtual = 39270
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1142.098 ; gain = 215.625 ; free physical = 2521 ; free virtual = 4826
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -119,12 +84,12 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     13 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 64    
+	   3 Input      8 Bit       Adders := 40    
 +---Registers : 
 	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 72    
+	               16 Bit    Registers := 80    
 	               13 Bit    Registers := 1     
-	                8 Bit    Registers := 216   
+	                8 Bit    Registers := 240   
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 7     
@@ -151,7 +116,7 @@ Module multple_mat
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     13 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 64    
+	   3 Input      8 Bit       Adders := 40    
 +---Registers : 
 	               13 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
@@ -762,6 +727,70 @@ DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
 DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
 DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
 DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
+DSP Report: Generating DSP M_reg[3], operation Mode is: (A''*B'')'.
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[0] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[1] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[3] is absorbed into DSP M_reg[3].
+DSP Report: register M_reg[2] is absorbed into DSP M_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP M_reg[3].
 WARNING: [Synth 8-3331] design nn0_v1_0 has unconnected port s00_axi_awprot[2]
 WARNING: [Synth 8-3331] design nn0_v1_0 has unconnected port s00_axi_awprot[1]
 WARNING: [Synth 8-3331] design nn0_v1_0 has unconnected port s00_axi_awprot[0]
@@ -772,30 +801,273 @@ INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'nn0_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (rA_reg[7]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[6]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[5]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[4]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[3]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[2]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[1]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rA_reg[0]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[6]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[5]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[4]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[3]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[2]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[1]) is unused and will be removed from module p_multiplier.
-WARNING: [Synth 8-3332] Sequential element (rB_reg[0]) is unused and will be removed from module p_multiplier.
 WARNING: [Synth 8-3332] Sequential element (nn0_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module nn0_v1_0.
 WARNING: [Synth 8-3332] Sequential element (nn0_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module nn0_v1_0.
 WARNING: [Synth 8-3332] Sequential element (nn0_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module nn0_v1_0.
 WARNING: [Synth 8-3332] Sequential element (nn0_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module nn0_v1_0.
 WARNING: [Synth 8-3332] Sequential element (nn0_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module nn0_v1_0.
 WARNING: [Synth 8-3332] Sequential element (nn0_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module nn0_v1_0.
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1/rB_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[0]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[1]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[2]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[3]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[4]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[5]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[6]' (FDR) to 'nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1/rB_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[1].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[2].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[3].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[4].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[5].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[6].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[7].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[8].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[1].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[1].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[1].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[1].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[0].genblk1[1].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[0].genblk1[1].genblk1[1].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[0].genblk1[0].genblk1[0].m1 /\rB_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn0_v1_0_S00_AXI_inst/UIP/genblk1[9].genblk1[0].genblk1[0].genblk1[1].m1 /\rB_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__1.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__2.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__3.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__4.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__5.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__6.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__7.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__8.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__9.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__10.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__11.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__12.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__13.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__14.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__15.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__16.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__17.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__18.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__19.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__20.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__21.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__22.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__23.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__24.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__25.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__26.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__27.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__28.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__29.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__30.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__31.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__32.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__33.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__34.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__35.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__36.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__37.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__38.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__39.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__40.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__41.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__42.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__43.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__44.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__45.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__46.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__47.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__48.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__49.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__50.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__51.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__52.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__53.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__54.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__55.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__56.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__57.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__58.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__59.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__60.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__61.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__62.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__63.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__64.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__65.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__66.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__67.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__68.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__69.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__70.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__71.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__72.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__73.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__74.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__75.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__76.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__77.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__78.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier__79.
+WARNING: [Synth 8-3332] Sequential element (rB_reg[7]) is unused and will be removed from module p_multiplier.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22621 ; free virtual = 39177
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1240.520 ; gain = 314.047 ; free physical = 2423 ; free virtual = 4728
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -805,6 +1077,14 @@ DSP: Preliminary Mapping  Report (see note below)
 +-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +-------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
 |p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
 |p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
 |p_multiplier | (A''*B'')'  | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
@@ -894,7 +1174,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22619 ; free virtual = 39175
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1240.520 ; gain = 314.047 ; free physical = 2424 ; free virtual = 4729
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -906,7 +1186,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22618 ; free virtual = 39174
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.395 ; gain = 316.922 ; free physical = 2420 ; free virtual = 4725
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -930,7 +1210,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22617 ; free virtual = 39174
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2420 ; free virtual = 4725
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -943,7 +1223,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22617 ; free virtual = 39174
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2420 ; free virtual = 4725
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -955,25 +1235,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22616 ; free virtual = 39174
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2420 ; free virtual = 4725
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22616 ; free virtual = 39174
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2420 ; free virtual = 4725
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22616 ; free virtual = 39174
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2419 ; free virtual = 4724
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22616 ; free virtual = 39174
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2419 ; free virtual = 4724
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -986,38 +1266,119 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |     3|
-|3     |LUT1   |    13|
-|4     |LUT2   |     1|
-|5     |LUT3   |    47|
-|6     |LUT4   |     9|
-|7     |LUT5   |     1|
-|8     |LUT6   |     5|
-|9     |FDRE   |    90|
-|10    |IBUF   |    47|
-|11    |OBUF   |    41|
-+------+-------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    83|
+|3     |DSP48E1 |    80|
+|4     |LUT1    |    13|
+|5     |LUT2    |   321|
+|6     |LUT3    |    17|
+|7     |LUT4    |    38|
+|8     |LUT5    |     4|
+|9     |LUT6    |     4|
+|10    |FDRE    |   411|
+|11    |IBUF    |    47|
+|12    |OBUF    |    41|
++------+--------+------+
 
 Report Instance Areas: 
-+------+------------------------+-----------------+------+
-|      |Instance                |Module           |Cells |
-+------+------------------------+-----------------+------+
-|1     |top                     |                 |   258|
-|2     |  nn0_v1_0_S00_AXI_inst |nn0_v1_0_S00_AXI |   169|
-|3     |    UIP                 |multple_mat      |    51|
-+------+------------------------+-----------------+------+
++------+-------------------------------------------------------+-----------------+------+
+|      |Instance                                               |Module           |Cells |
++------+-------------------------------------------------------+-----------------+------+
+|1     |top                                                    |                 |  1060|
+|2     |  nn0_v1_0_S00_AXI_inst                                |nn0_v1_0_S00_AXI |   971|
+|3     |    UIP                                                |multple_mat      |   883|
+|4     |      \genblk1[0].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier     |    10|
+|5     |      \genblk1[0].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_0   |     9|
+|6     |      \genblk1[0].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_1   |     1|
+|7     |      \genblk1[0].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_2   |     1|
+|8     |      \genblk1[0].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_3   |     9|
+|9     |      \genblk1[0].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_4   |     9|
+|10    |      \genblk1[0].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_5   |     1|
+|11    |      \genblk1[0].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_6   |     1|
+|12    |      \genblk1[1].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_7   |     9|
+|13    |      \genblk1[1].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_8   |     9|
+|14    |      \genblk1[1].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_9   |     1|
+|15    |      \genblk1[1].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_10  |     1|
+|16    |      \genblk1[1].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_11  |     9|
+|17    |      \genblk1[1].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_12  |     9|
+|18    |      \genblk1[1].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_13  |     1|
+|19    |      \genblk1[1].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_14  |     1|
+|20    |      \genblk1[2].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_15  |     9|
+|21    |      \genblk1[2].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_16  |     9|
+|22    |      \genblk1[2].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_17  |     1|
+|23    |      \genblk1[2].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_18  |     1|
+|24    |      \genblk1[2].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_19  |     9|
+|25    |      \genblk1[2].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_20  |     9|
+|26    |      \genblk1[2].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_21  |     1|
+|27    |      \genblk1[2].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_22  |     1|
+|28    |      \genblk1[3].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_23  |     9|
+|29    |      \genblk1[3].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_24  |     9|
+|30    |      \genblk1[3].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_25  |     1|
+|31    |      \genblk1[3].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_26  |     1|
+|32    |      \genblk1[3].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_27  |     9|
+|33    |      \genblk1[3].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_28  |     9|
+|34    |      \genblk1[3].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_29  |     1|
+|35    |      \genblk1[3].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_30  |     1|
+|36    |      \genblk1[4].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_31  |     9|
+|37    |      \genblk1[4].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_32  |     9|
+|38    |      \genblk1[4].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_33  |     1|
+|39    |      \genblk1[4].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_34  |     1|
+|40    |      \genblk1[4].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_35  |     9|
+|41    |      \genblk1[4].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_36  |     9|
+|42    |      \genblk1[4].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_37  |     1|
+|43    |      \genblk1[4].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_38  |     1|
+|44    |      \genblk1[5].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_39  |     9|
+|45    |      \genblk1[5].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_40  |     9|
+|46    |      \genblk1[5].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_41  |     1|
+|47    |      \genblk1[5].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_42  |     1|
+|48    |      \genblk1[5].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_43  |     9|
+|49    |      \genblk1[5].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_44  |     9|
+|50    |      \genblk1[5].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_45  |     1|
+|51    |      \genblk1[5].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_46  |     1|
+|52    |      \genblk1[6].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_47  |     9|
+|53    |      \genblk1[6].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_48  |     9|
+|54    |      \genblk1[6].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_49  |     1|
+|55    |      \genblk1[6].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_50  |     1|
+|56    |      \genblk1[6].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_51  |     9|
+|57    |      \genblk1[6].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_52  |     9|
+|58    |      \genblk1[6].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_53  |     1|
+|59    |      \genblk1[6].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_54  |     1|
+|60    |      \genblk1[7].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_55  |     9|
+|61    |      \genblk1[7].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_56  |     9|
+|62    |      \genblk1[7].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_57  |     1|
+|63    |      \genblk1[7].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_58  |     1|
+|64    |      \genblk1[7].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_59  |     9|
+|65    |      \genblk1[7].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_60  |     9|
+|66    |      \genblk1[7].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_61  |     1|
+|67    |      \genblk1[7].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_62  |     1|
+|68    |      \genblk1[8].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_63  |     9|
+|69    |      \genblk1[8].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_64  |     9|
+|70    |      \genblk1[8].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_65  |     1|
+|71    |      \genblk1[8].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_66  |     1|
+|72    |      \genblk1[8].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_67  |     9|
+|73    |      \genblk1[8].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_68  |     9|
+|74    |      \genblk1[8].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_69  |     1|
+|75    |      \genblk1[8].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_70  |     1|
+|76    |      \genblk1[9].genblk1[0].genblk1[0].genblk1[0].m1  |p_multiplier_71  |    22|
+|77    |      \genblk1[9].genblk1[0].genblk1[0].genblk1[1].m1  |p_multiplier_72  |     9|
+|78    |      \genblk1[9].genblk1[0].genblk1[1].genblk1[0].m1  |p_multiplier_73  |    13|
+|79    |      \genblk1[9].genblk1[0].genblk1[1].genblk1[1].m1  |p_multiplier_74  |     1|
+|80    |      \genblk1[9].genblk1[1].genblk1[0].genblk1[0].m1  |p_multiplier_75  |    21|
+|81    |      \genblk1[9].genblk1[1].genblk1[0].genblk1[1].m1  |p_multiplier_76  |     9|
+|82    |      \genblk1[9].genblk1[1].genblk1[1].genblk1[0].m1  |p_multiplier_77  |    13|
+|83    |      \genblk1[9].genblk1[1].genblk1[1].genblk1[1].m1  |p_multiplier_78  |     1|
++------+-------------------------------------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22616 ; free virtual = 39174
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.398 ; gain = 316.926 ; free physical = 2419 ; free virtual = 4724
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 75 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1234.504 ; gain = 221.949 ; free physical = 22616 ; free virtual = 39174
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1234.504 ; gain = 308.031 ; free physical = 22617 ; free virtual = 39174
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1243.398 ; gain = 229.844 ; free physical = 2419 ; free virtual = 4724
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.402 ; gain = 316.930 ; free physical = 2421 ; free virtual = 4726
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1025,9 +1386,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+206 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1391.508 ; gain = 395.473 ; free physical = 22526 ; free virtual = 39107
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1368.508 ; gain = 372.473 ; free physical = 2348 ; free virtual = 4652
 INFO: [Common 17-1381] The checkpoint '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/edit_nn0_v1_0.runs/synth_1/nn0_v1_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1415.578 ; gain = 0.000 ; free physical = 22517 ; free virtual = 39102
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 18:12:22 2017...
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1392.578 ; gain = 0.000 ; free physical = 2346 ; free virtual = 4651
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 23 18:54:02 2017...

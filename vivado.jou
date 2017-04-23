@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Apr 23 18:19:47 2017
+# Process ID: 30282
+# Current directory: /auto/homes/yaz21/P35_clean/v3/rtl
+# Command line: vivado
+# Log file: /auto/homes/yaz21/P35_clean/v3/rtl/vivado.log
+# Journal file: /auto/homes/yaz21/P35_clean/v3/rtl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /auto/homes/yaz21/P35_clean/v3/rtl/top/top.xpr
+open_project /auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/edit_nn0_v1_0.xpr
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+current_project edit_nn0_v1_0
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+current_project top
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 

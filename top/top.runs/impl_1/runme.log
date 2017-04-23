@@ -1,4 +1,0 @@
-
-*** Running vivado
-    with args -log top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
-

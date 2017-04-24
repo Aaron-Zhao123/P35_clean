@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Wed Apr 19 18:12:22 2017
-| Host         : svr-acs-00.cl.cam.ac.uk running 64-bit Ubuntu 14.04.5 LTS
+| Date         : Sun Apr 23 18:54:02 2017
+| Host         : acs-05.cl.cam.ac.uk running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_utilization -file nn0_v1_0_utilization_synth.rpt -pb nn0_v1_0_utilization_synth.pb
 | Design       : nn0_v1_0
 | Device       : 7z010clg400-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   53 |     0 |     17600 |  0.30 |
-|   LUT as Logic          |   53 |     0 |     17600 |  0.30 |
+| Slice LUTs*             |  389 |     0 |     17600 |  2.21 |
+|   LUT as Logic          |  389 |     0 |     17600 |  2.21 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |   90 |     0 |     35200 |  0.26 |
-|   Register as Flip Flop |   90 |     0 |     35200 |  0.26 |
+| Slice Registers         |  411 |     0 |     35200 |  1.17 |
+|   Register as Flip Flop |  411 |     0 |     35200 |  1.17 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 90    |          Yes |       Reset |            - |
+| 411   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -77,11 +77,12 @@ Table of Contents
 3. DSP
 ------
 
-+-----------+------+-------+-----------+-------+
-| Site Type | Used | Fixed | Available | Util% |
-+-----------+------+-------+-----------+-------+
-| DSPs      |    0 |     0 |        80 |  0.00 |
-+-----------+------+-------+-----------+-------+
++----------------+------+-------+-----------+--------+
+|    Site Type   | Used | Fixed | Available |  Util% |
++----------------+------+-------+-----------+--------+
+| DSPs           |   80 |     0 |        80 | 100.00 |
+|   DSP48E1 only |   80 |       |           |        |
++----------------+------+-------+-----------+--------+
 
 
 4. IO and GT Specific
@@ -146,16 +147,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   90 |        Flop & Latch |
-| LUT3     |   47 |                 LUT |
+| FDRE     |  411 |        Flop & Latch |
+| LUT2     |  321 |                 LUT |
+| CARRY4   |   83 |          CarryLogic |
+| DSP48E1  |   80 |    Block Arithmetic |
 | IBUF     |   47 |                  IO |
 | OBUF     |   41 |                  IO |
+| LUT4     |   38 |                 LUT |
+| LUT3     |   17 |                 LUT |
 | LUT1     |   13 |                 LUT |
-| LUT4     |    9 |                 LUT |
-| LUT6     |    5 |                 LUT |
-| CARRY4   |    3 |          CarryLogic |
-| LUT5     |    1 |                 LUT |
-| LUT2     |    1 |                 LUT |
+| LUT6     |    4 |                 LUT |
+| LUT5     |    4 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

@@ -36,13 +36,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="44"/>
-    <Option Name="WTModelSimExportSim" Val="44"/>
-    <Option Name="WTQuestaExportSim" Val="44"/>
-    <Option Name="WTIesExportSim" Val="44"/>
-    <Option Name="WTVcsExportSim" Val="44"/>
-    <Option Name="WTRivieraExportSim" Val="44"/>
-    <Option Name="WTActivehdlExportSim" Val="44"/>
+    <Option Name="WTXSimExportSim" Val="49"/>
+    <Option Name="WTModelSimExportSim" Val="49"/>
+    <Option Name="WTQuestaExportSim" Val="49"/>
+    <Option Name="WTIesExportSim" Val="49"/>
+    <Option Name="WTVcsExportSim" Val="49"/>
+    <Option Name="WTRivieraExportSim" Val="49"/>
+    <Option Name="WTActivehdlExportSim" Val="49"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -58,20 +58,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_ps7_0_axi_periph_0/top_ps7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_rst_ps7_0_50M_0/top_rst_ps7_0_50M_0.xci"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_nn0_0_0/top_nn0_0_0.xci">
           <Proxy FileSetName="top_nn0_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_ps7_0_axi_periph_0/top_ps7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_processing_system7_0_0/top_processing_system7_0_0.xci">
           <Proxy FileSetName="top_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hdl/top.v"/>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hw_handoff/top_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hdl/top.hwdef"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hw_handoff/top_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="top_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_auto_pc_0/top_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hw_handoff/top.hwh"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_auto_pc_0/top_auto_pc_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/top/hdl/top_wrapper.v">
         <FileInfo>

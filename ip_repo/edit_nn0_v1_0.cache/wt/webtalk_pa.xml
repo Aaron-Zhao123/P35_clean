@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Apr 20 22:24:39 2017">
+<application name="pa" timeStamp="Sun Apr 23 18:53:29 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="eea7a9fbcac145edba6e6e366883d570" type="ProjectID"/>
 <property name="ProjectIteration" value="4" type="ProjectIteration"/>
@@ -20,27 +20,29 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSources" value="1" type="JavaHandler"/>
 <property name="CloseProject" value="2" type="JavaHandler"/>
 <property name="EditInIPPackagerHandler" value="2" type="JavaHandler"/>
-<property name="EditPaste" value="2" type="JavaHandler"/>
+<property name="EditPaste" value="3" type="JavaHandler"/>
 <property name="IPPackagerHandler" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="2" type="JavaHandler"/>
 <property name="RunBitgen" value="1" type="JavaHandler"/>
 <property name="RunImplementation" value="2" type="JavaHandler"/>
-<property name="RunSynthesis" value="15" type="JavaHandler"/>
+<property name="RunSynthesis" value="16" type="JavaHandler"/>
 <property name="ShowView" value="8" type="JavaHandler"/>
+<property name="UpgradeIP" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="AbstractSearchablePanel_SHOW_SEARCH" value="2" type="GuiResourceData"/>
-<property name="BaseDialog_CANCEL" value="8" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="17" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="9" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="18" type="GuiResourceData"/>
 <property name="BaseDialog_YES" value="3" type="GuiResourceData"/>
 <property name="BaseReportTab_RERUN" value="4" type="GuiResourceData"/>
 <property name="EditIPProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
 <property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="35" type="GuiResourceData"/>
 <property name="ExploreAheadView_COLLAPSE_ALL" value="1" type="GuiResourceData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="27" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="20" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="21" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
 <property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="2" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="1" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="6" type="GuiResourceData"/>
 <property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="6" type="GuiResourceData"/>
 <property name="MainMenuMgr_WINDOW" value="2" type="GuiResourceData"/>
@@ -52,16 +54,17 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_OPEN_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PAViews_PAR_REPORT" value="5" type="GuiResourceData"/>
 <property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="1" type="GuiResourceData"/>
-<property name="PlanAheadTab_REFRESH_IP_CATALOG" value="1" type="GuiResourceData"/>
+<property name="PlanAheadTab_REFRESH_IP_CATALOG" value="2" type="GuiResourceData"/>
 <property name="ReviewContentPanel_RE_PACKAGE_IP" value="1" type="GuiResourceData"/>
 <property name="SelectMenu_HIGHLIGHT" value="6" type="GuiResourceData"/>
+<property name="SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL" value="1" type="GuiResourceData"/>
 <property name="SystemBuilderView_EXPAND_COLLAPSE" value="3" type="GuiResourceData"/>
 <property name="SystemBuilderView_ORIENTATION" value="7" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="27" type="GuiMode"/>
+<property name="GuiMode" value="28" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="15" type="TclMode"/>
+<property name="TclMode" value="16" type="TclMode"/>
 </item>
 </section>
 </application>

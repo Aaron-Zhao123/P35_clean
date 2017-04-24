@@ -1,0 +1,433 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Apr 23 18:19:47 2017
+# Process ID: 30282
+# Current directory: /auto/homes/yaz21/P35_clean/v3/rtl
+# Command line: vivado
+# Log file: /auto/homes/yaz21/P35_clean/v3/rtl/vivado.log
+# Journal file: /auto/homes/yaz21/P35_clean/v3/rtl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /auto/homes/yaz21/P35_clean/v3/rtl/top/top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/groups/ecad/xilinx/Vivado2017/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 5882.504 ; gain = 106.246 ; free physical = 3472 ; free virtual = 5612
+open_project /auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/edit_nn0_v1_0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/groups/ecad/xilinx/Vivado2017/Vivado/2016.4/data/ip'.
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- user.org:user:nn0:1.0 - nn0_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <top> from BD file </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd>
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 6039.223 ; gain = 95.160 ; free physical = 3327 ; free virtual = 5500
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 6119.230 ; gain = 80.008 ; free physical = 3219 ; free virtual = 5412
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+[Sun Apr 23 18:24:01 2017] Launched top_nn0_0_0_synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Apr 23 18:24:17 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 18:24:17 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+[Sun Apr 23 18:28:48 2017] Launched top_nn0_0_0_synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Apr 23 18:28:57 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 18:28:57 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+[Sun Apr 23 18:35:12 2017] Launched top_nn0_0_0_synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Apr 23 18:35:26 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 18:35:26 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+current_project edit_nn0_v1_0
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+current_project edit_nn0_v1_0
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/p_multiplier.v" into library work [/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0/src/p_multiplier.v:1]
+[Sun Apr 23 18:53:29 2017] Launched synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/edit_nn0_v1_0.runs/synth_1/runme.log
+current_project top
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+[Sun Apr 23 18:55:04 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 18:55:04 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6359.094 ; gain = 38.047 ; free physical = 2762 ; free virtual = 5059
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+[Sun Apr 23 19:02:10 2017] Launched top_nn0_0_0_synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+[Sun Apr 23 19:03:34 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 19:03:34 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 6460.000 ; gain = 25.000 ; free physical = 2563 ; free virtual = 4863
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+[Sun Apr 23 19:15:52 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 19:15:52 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6497.328 ; gain = 15.000 ; free physical = 2560 ; free virtual = 4859
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+catch { config_ip_cache -export [get_ips -all top_nn0_0_0] }
+catch { config_ip_cache -export [get_ips -all top_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+export_ip_user_files -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd]
+launch_runs -jobs 2 top_nn0_0_0_synth_1
+[Sun Apr 23 19:25:06 2017] Launched top_nn0_0_0_synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd] -directory /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/sim_scripts -ip_user_files_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files -ipstatic_source_dir /auto/homes/yaz21/P35_clean/v3/rtl/top/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/modelsim} {questa=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/questa} {ies=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/ies} {vcs=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/vcs} {riviera=/auto/homes/yaz21/P35_clean/v3/rtl/top/top.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Apr 23 19:27:19 2017] Launched synth_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 19:27:19 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+[Sun Apr 23 19:32:24 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 19:32:25 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 6565.859 ; gain = 0.062 ; free physical = 2334 ; free virtual = 4629
+report_ip_status -name ip_status 
+current_project edit_nn0_v1_0
+current_project top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/auto/homes/yaz21/P35_clean/v3/rtl/ip_repo/nn0_1.0'.
+report_ip_status -name ip_status
+current_project edit_nn0_v1_0
+current_project top
+upgrade_ip -vlnv user.org:user:nn0:1.0 [get_ips  top_nn0_0_0] -log ip_upgrade.log
+Upgrading '/auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd'
+INFO: [IP_Flow 19-1972] Upgraded top_nn0_0_0 from nn0_v1.0 1.0 to nn0_v1.0 1.0
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/auto/homes/yaz21/P35_clean/v3/rtl/top/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips top_nn0_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.v
+Verilog Output written to : /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top_wrapper.v
+Wrote  : </auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/top.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File /auto/homes/yaz21/P35_clean/v3/rtl/top/top.srcs/sources_1/bd/top/hdl/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = ee0aba4ff80225b3; cache size = 2.605 MB.
+[Sun Apr 23 19:38:10 2017] Launched top_nn0_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_nn0_0_0_synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/top_nn0_0_0_synth_1/runme.log
+synth_1: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/synth_1/runme.log
+[Sun Apr 23 19:38:10 2017] Launched impl_1...
+Run output will be captured here: /auto/homes/yaz21/P35_clean/v3/rtl/top/top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6585.406 ; gain = 10.938 ; free physical = 2267 ; free virtual = 4564
+report_ip_status -name ip_status 
